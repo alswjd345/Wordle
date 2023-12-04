@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wordle</title>
+</head>
+<script defer src="wordle.js"></script>
+<link rel="stylesheet" href="worlde.css">
+
+<body>
+<!--알파벳 위치가 맞으면 초록-->
+<!--알파벳 다른 곳에 있으면 노랑-->
+<!--없으면 회색-->
+<!-- 기회는 7번 -->
+<h1>Wordle!</h1>
+<section>
+    <div>
+        <input type="text"  class="input" maxlength="1" pattern="[a-zA-Z]" onkeydown="onKeyDownEvent(event);" autofocus>
+        <input type="text" class="input" maxlength="1" pattern="[a-zA-Z]" onkeydown="onKeyDownEvent(event);" >
+        <input type="text" class="input" maxlength="1" pattern="[a-zA-Z]" onkeydown="onKeyDownEvent(event);">
+        <input type="text" class="input" maxlength="1" pattern="[a-zA-Z]" onkeydown="onKeyDownEvent(event);">
+        <input type="text"  class="input" maxlength="1" pattern="[a-zA-Z]" onkeydown="onKeyDownEvent(event);">
+        <button>Enter</button>
+    </div>
+</section>
+</body>
+</html>
+
+<!-- input입력 창에 한글입력 막는 방법의 문제점 해결방안  -->
